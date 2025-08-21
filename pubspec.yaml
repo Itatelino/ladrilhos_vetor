@@ -1,0 +1,43 @@
+name: ladrilhos_app
+description: Um aplicativo para encomenda de ladrilhos personalizados.
+
+# A seção publish_to impede que este pacote seja publicado no pub.dev.
+# Para publicar, remova esta linha.
+publish_to: 'none'
+
+# A versão do seu projeto. A primeira parte é a versão do aplicativo,
+# e a segunda parte é o código da build.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Define a versão mínima e máxima do SDK do Flutter.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Pacote para ícones estilo iOS.
+  cupertino_icons: ^1.0.2 
+  # Pacote essencial para renderizar arquivos SVG no Flutter.
+  flutter_svg: ^2.0.10+1 
+  # Pacote para abrir URLs externas, como links do WhatsApp.
+  url_launcher: ^6.2.2  
+
+dev_dependencies:
+  # Pacote para testes de unidade e widget.
+  flutter_test:
+    sdk: flutter
+  # Ferramentas de análise de código para garantir boas práticas.
+  flutter_lints: ^2.0.0 
+
+# A seção Flutter.
+flutter:
+  # Habilita o uso do Material Design no seu aplicativo.
+  uses-material-design: true
+
+  # Para incluir imagens, fontes ou outros arquivos no seu aplicativo,
+  # declare-os nesta seção.
+  assets:
+    # Declara que todos os arquivos dentro da pasta 'assets/svg/'
+    # devem ser incluídos no build do aplicativo.
+    - assets/svg/
