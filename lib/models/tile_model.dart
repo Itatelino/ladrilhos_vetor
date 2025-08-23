@@ -104,6 +104,40 @@ final List<Tile> availableTiles = [
     ],
     initialHexColorsInSvg: ['#E8F5E9', '#FF5722', '#009688', '#FFC107'],
   ),
+  Tile(
+    id: 'tile_004',
+    name: 'Ladrilho Abstrato',
+    svgAssetPath: 'assets/svg/tile_test.svg', // Agora carrega de assets
+    colorablePartNames: [
+      'Fundo',
+      'Forma 1',
+      'Forma 2',
+      'Forma 3',
+    ],
+    initialColors: [
+      Colors.orange[50]!,
+      Colors.red,
+      Colors.blue,
+      Colors.green,
+    ],
+    initialHexColorsInSvg: ['#FFF3E0', '#F44336', '#2196F3', '#4CAF50'],
+  ),
+  Tile(
+    id: 'tile_005',
+    name: 'Ladrilho Clássico',
+    svgAssetPath: 'assets/svg/tile_classic.svg', // Agora carrega de assets
+    colorablePartNames: [
+      'Fundo',
+      'Borda',
+      'Detalhe Central',
+    ],
+    initialColors: [
+      Colors.brown[50]!,
+      Colors.brown,
+      Colors.yellow[700]!,
+    ],
+    initialHexColorsInSvg: ['#EFEBE9', '#795548', '#FBC02D'],
+  ),
 ];
 
 // Global list para o carrinho
